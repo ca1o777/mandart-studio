@@ -15,6 +15,12 @@
     a:hover{color:#2B1D1E}
     summary::-webkit-details-marker{display:none}
     @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    @media (max-width:760px){
+      .hero-inner{flex-direction:column;padding-top:40px !important;padding-bottom:40px !important}
+      .hero-foto-col{order:-1;width:100%}
+      .hero-foto-col > div{aspect-ratio:auto !important;height:50vh}
+      .hero-foto-col img{width:100%;height:100%;object-fit:cover}
+    }
   </style>
 <meta name="description" content="Mandart Studio, by Amanda Lima: extensão de cílios e design de sobrancelhas em Taguatinga-DF, com visagismo personalizado e biossegurança. Agende pelo WhatsApp.">
 </head>
@@ -23,8 +29,8 @@
 
   <!-- ============ HERO ============ -->
   <header style="background:#241718;color:#F7F0EA;position:relative;overflow:hidden;padding:0 24px">
-    <div style="max-width:1060px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:48px;padding:72px 0 64px">
-      <div style="flex:1 1 380px;min-width:300px;max-width:520px;display:flex;flex-direction:column;align-items:flex-start;gap:0">
+    <div class="hero-inner" style="max-width:1060px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:48px;padding:72px 0 64px">
+      <div class="hero-texto" style="flex:1 1 380px;min-width:300px;max-width:520px;display:flex;flex-direction:column;align-items:flex-start;gap:0">
         <p style="margin:0 0 18px;letter-spacing:.32em;text-transform:uppercase;font-size:11px;color:#E8C4BB;font-weight:700">Taguatinga · DF</p>
         <h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(56px,8vw,86px);line-height:.95;letter-spacing:-.01em">Mandart<br><em style="font-style:italic;color:#E8C4BB">Studio</em></h1>
         <div style="display:flex;align-items:center;gap:14px;margin:26px 0 18px">
@@ -42,7 +48,7 @@
           <a href="#precos" style="color:#E8C4BB;font-size:13px;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid rgba(232,196,187,.4);padding-bottom:3px" style-hover="color:#fff;border-color:#fff">Ver valores</a>
         </div>
       </div>
-      <div style="flex:0 1 340px;min-width:270px">
+      <div class="hero-foto-col" style="flex:0 1 340px;min-width:270px">
         <div style="aspect-ratio:4/5;border-radius:200px 200px 26px 26px;overflow:hidden;background:linear-gradient(160deg,#8C5F52,#E8C4BB);box-shadow:0 30px 60px rgba(0,0,0,.45);outline:1px solid rgba(232,196,187,.35);outline-offset:10px">
           <img src="images/hero.jpg" alt="Amanda Lima, lash designer" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
